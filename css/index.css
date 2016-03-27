@@ -1,0 +1,794 @@
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img,input,button { border:none; padding:0;margin:0;outline-style:none; }
+ul, ol { list-style:none; }
+input { padding-top:0; padding-bottom:0; font-family: "SimSun","宋体";}
+select, input { vertical-align:middle; }
+select, input, textarea { font-size:12px; margin:0; }
+textarea { resize:none; }
+img {border:0;	vertical-align:middle;}
+table { border-collapse:collapse; }
+body {
+    /*font:12px/150% Arial,Verdana,"\5b8b\4f53";*/
+    font:14px/1.5 "Microsoft Yahei","Microsoft Yahei UI",Arial,"Hiragino Sans GB",sans-serif;
+    color:#666;
+    background:#fff
+}
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
+    *zoom:1;/*IE/7/6*/
+}
+a{color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+h1,h2,h3,h4,h5,h6{text-decoration:none;font-weight:normal;}
+s,i,em{font-style:normal;text-decoration:none;}
+.col-red{color: #C81623!important;}
+
+/*公共类*/
+.w{
+    width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.fl {
+    float:left
+}
+.fr {
+    float:right
+}
+.al {
+    text-align:left
+}
+.ac {
+    text-align:center
+}
+.ar {
+    text-align:right
+}
+.hide {
+    display:none
+}
+
+/*main*/
+.fenlei{
+    width: 273px;
+    border: 1px solid #DCDCDC;
+    border-top:0 ;
+    float: left;
+}
+
+.fenlei li {
+    padding: 10px 0 12px 13px;
+    z-index: 10;
+    display: block;
+    border-left: 2px solid #fff;
+    border-top: 1px solid #ebecef;
+}
+.fenlei li:hover {
+    background: #f8f8f3;
+    border-left: 2px solid #fcc800;
+    left: -1px;
+}
+.fenlei li h3 {
+    font-weight: 700;
+}
+.fenlei li h3 a{
+    color: #495672;
+}
+.fenlei li a {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #666;
+}
+  .main{
+      overflow: hidden;
+  }
+ .main_lunbo{
+     width: 965px;
+     height: 568px;
+     border-bottom: 1px solid #ebecef;
+     float: right;
+ }
+ .box{
+     width:965px;
+     height:413px;
+     float: right;
+ }
+/* 本例子css */
+.slideBox{ width:100%; height:100%; overflow:hidden; position:relative;}
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:5px; bottom:5px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center; background:#fff; cursor:pointer;border-radius: 15px; }
+.slideBox .hd ul li.on{ background:#f00; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:100%; height:100%; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+
+
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:41px; height:69px; background:url(../images/bannerarrow_0c926c1.png) no-repeat 0 0; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:-45px 0px; }
+.slideBox .prev:hover{background-position: 0 -70px;}
+.slideBox .next:hover{background-position: -45px -70px;}
+/*.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }*/
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+
+
+
+.main_shouji{
+    float: left;
+    width: 965px;
+    margin-left: 2px;
+}
+.main_shouji li{
+    float: left;
+    border-right: 1px solid #ebecef;
+}
+.main_shouji li img{
+     width: 320px;
+     height: 155px;
+ }
+.main_shouji a{
+    display: inline-block;
+    width: 320px;
+    height: 155px;
+}
+
+.main_shouji a:hover {
+    background-color: #efefef;
+}
+
+/*main*/
+
+/*推荐*/
+ .monkey{
+     width: 100%;
+     height: 70px;
+ }
+ .monkey img{
+     display: inline-block;
+     width: 35px;
+     height: 38px;
+     margin-top: -20px;
+     text-align: center;
+ }
+ .monkey span{
+     display: inline-block;
+     height: 70px;
+     line-height: 70px;
+     font-size: 20px;
+     text-indent: 5px;
+     font-weight: 500;
+     color: #413636;
+     margin-top: 10px;
+ }
+.tuijian_shouji {
+    overflow: hidden;
+    border: 1px solid #ebecef;
+    height: 368px;
+    width: 1237px;
+}
+
+.tuijian_shouji ul li{
+    border-right: 1px solid #ebecef;
+    border-top: 1px solid #ebecef;
+    border-bottom: 1px solid #ebecef;
+    float: left;
+    position: relative;
+    width: 412px;
+}
+.tuijian_shouji ul li:nth-child(2){
+    margin-left: -1px;
+}
+.tuijian_shouji ul li:nth-child(1){
+    border-right: 2px solid #ebecef;
+}
+.tuijian_shouji ul li:nth-child(3){
+    margin-right: -2px;
+}
+
+.tuijian_shouji ul li a{
+    /*border-color: #fff;*/
+    position: relative;
+    display: inline-block;
+    width: 412px;
+    height: 368px;
+    transition: border-color 1.0s ease;
+}
+
+.tuijian_shouji ul li a:hover{
+    border: 4px solid #e9e9e9;
+    box-sizing: border-box;
+}
+.tuijian_shouji  ul li a img{
+
+    margin:auto;
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom: 0;
+}
+/*推荐*/
+
+/*畅销商品开始*/
+
+/* 本例子css */
+.picScroll-left{ overflow:hidden; position:relative;}
+.product-explore-title span {
+    position: relative;
+    top: -6px;
+    padding-right: 5px;}
+.product-explore-title span img {
+    height: auto;
+    border: 0;
+    vertical-align: top;
+}
+.picScroll-left .hd{
+    overflow:hidden;
+    height:30px;
+    position: relative;
+    clear: both;
+    padding: 25px 0 15px;
+    font-size: 20px;
+    text-indent: 5px;
+    font-weight: 400;
+    color: #413636;
+}
+.product-explore-title .more a {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    right: 0;
+    margin-left: 10px;
+    background: url(../images/arrow.jpg);
+}
+.picScroll-left .hd .prev,.picScroll-left .hd .next{
+    width: 18px;
+    height: 18px;
+     float:right; margin-right:5px;overflow:hidden;
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin-top: -17px;
+    right: 0;
+    margin-left: 10px;
+    background: url(../images/arrow.jpg)no-repeat 0 0;
+
+}
+.picScroll-left .hd .next{
+
+    background-position:-19px 0;
+}
+.picScroll-left .hd .next:hover{
+
+    background-position:-19px -19px;
+}
+.picScroll-left .hd .prev{
+
+    background-position:0 0;}
+.picScroll-left .hd .prev:hover{
+
+    background-position:0 -19px;}
+
+.picScroll-left .hd ul{ float:right; overflow:hidden; zoom:1; margin-top:10px; }
+.picScroll-left .hd ul li{ float:left;  width:9px; height:9px; overflow:hidden; margin-right:5px; text-indent:-999px; cursor:pointer;
+     }
+.picScroll-left .hd ul li.on{ background-position:0 0; }
+.picScroll-left .bd{margin: 5px auto;
+    border-bottom: 1px solid #ebecef; border-right: 1px solid #ebecef;}
+.picScroll-left .bd ul{ overflow:hidden; zoom:1;border-left: 1px solid #ebecef;
+    }
+.picScroll-left .bd ul li{
+    width: 309px;
+    height: 383px;
+    float:left; display:inline-block; overflow:hidden; text-align:center; border-right: 1px solid #ebecef;
+    border-top: 2px solid #ebecef;  }
+.picScroll-left .bd ul li .pic{ text-align:center; }
+.picScroll-left .bd ul li .pic img{ width:300px; height:300px; display:block;}
+.picScroll-left .bd ul li:hover {
+    display: inline-block;
+    width: 309px;
+    height: 383px;
+    box-sizing: border-box;
+    border: 4px solid #ebecef;
+     }
+.picScroll-left .bd ul li .title{ line-height:24px;}
+ b{    color: #4b4b4b;
+     font-size: 14px;
+     font-weight: 400;
+     margin: 10px 0 5px;}
+ p{
+     color: #848484;
+     font-size: 14px;
+     font-style: normal
+ }
+
+
+/*畅销商品结束*/
+
+/*精美配件开始*/
+.product-explore-title {
+    margin: 0 1px;
+    position: relative;
+    height: 29px;
+    border-bottom: 1px solid #e7e7e7;
+    clear: both;
+    padding: 25px 0 15px;
+    font-size: 20px;
+    text-indent: 5px;
+    font-weight: 400;
+    color: #413636;
+}
+.peijian-left {
+    width: 927px;
+    height: auto;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #ececec;
+}
+
+.peijian-left span{
+    position: relative;
+    height: 311px;
+    display: block;
+    float: left;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+ .peijian-left span a{
+     display: block;
+     border: 4px solid #fff;
+     cursor: pointer;
+ }
+.peijian-left a:hover {
+    border: 4px solid #e9e9e9;
+}
+.peijian-l-a{
+    display: inline-block;
+    width: 609px;
+    height: 303px;
+    text-align: left;
+    overflow: hidden;
+}
+.peijian-left span .peijian-left-a{
+    display: inline-block;
+    width: 300px;
+    height: 303px;
+    text-align: left;
+    overflow: hidden;
+}
+.imgs {
+    height: 230px;
+    text-align: center;
+}
+.peijian-left span a:hover img{
+    transition: all 0.5s ease;
+    transform: scale(1.02);
+}
+.peijian-left span .peijian-left-a img{
+    width: 230px;
+    height: 230px;
+    margin:6px auto;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+ .peijian-left p{
+     margin-top: 8px;
+     font-size: 14px;
+     color: #4b4b4b;
+     text-align: center;
+ }
+
+.peijian-left span .peijian-left-l{
+    float: left;
+    padding-left: 38px;
+}
+.peijian-left span .peijian-left-l h3{
+    padding-top: 49px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #303030;
+}
+.peijian-left .peijian-left-l .p1{
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+}
+.peijian-left .peijian-left-l .p2{
+    padding-top: 23px;
+    font-size: 33px;
+    text-align: left;
+}
+.peijian-left-r{
+    float: right;
+    padding-right: 28px;
+    width: 301px;
+    height: 301px;
+}
+
+.peijian-right{
+    width: 311px;
+    height: auto;
+    float: left;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+}
+.peijian-right .rink{
+    display: block;
+    height: 102px;
+    border-bottom: 1px solid #ececec;
+    background: url(../images/ico-03.png) no-repeat center center;
+}
+
+.peijian-right ul li a{
+    display:block;
+    width: 311px;
+    height: 103px;
+    border-top:1px dashed #ececec;
+}
+.peijian-right ul li a:hover{
+    background-color: #efefef;
+}
+.peijian-right ul li a:hover img{
+    transition: all 0.5s ease;
+    transform: scale(1.1);
+}
+.peijian-right ul li:first-child a{
+    border-top: 1px solid #fff;
+}
+.peijian-right ul li a img{
+    width: 120px;
+    height: 81px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.peijian-right ul li a .sp{
+    color: #ea4d18;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 28px;
+    margin-top: 45px;
+    font-weight: 400;
+}
+.peijian-right ul li span{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 35px;
+    font-size: 12px;
+    color: #4b4b4b;
+    margin-left: 10px;
+}
+.peijian-right ul li span em i{
+    font-size: 16px;
+    color: #4b4b4b;
+    font-style: normal;
+    margin-right: 2px;
+}
+/*精美配件结束*/
+
+/*底部开始*/
+#footer {
+    background-color: #f7f6f6;
+    margin: 50px auto 0;
+    background-size: cover;
+    display: table;
+    width: 100%;
+}
+ .footer-service{
+     width: 1240px;
+     margin: 0 auto;
+     padding: 35px 0;
+     border-bottom: 1px solid #e7e7e7;
+     display: block;
+     overflow: hidden;
+ }
+.footer-service li{
+    width: 25%;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: #333;
+}
+.footer-service i{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 44px;
+    height: 44px;
+    background: url(../images/footer-icon_6999e0a.png) no-repeat 0 0;
+}
+.footer-service .icon-1{
+    background-position: 0 -50px;
+}
+.footer-service .icon-1:hover{
+    background-position: 0 0;
+}
+.footer-service .icon-2{
+    background-position:-44px -50px;
+}
+.footer-service .icon-2:hover{
+    background-position: -44px 0;
+}
+.footer-service .icon-3{
+    background-position: -88px -50px;
+}
+.footer-service .icon-3:hover{
+    background-position: -88px 0;
+}
+.footer-service .icon-4{
+    background-position: -132px -50px;
+}
+.footer-service .icon-4:hover{
+    background-position: -132px 0;
+}
+
+.footer-service span{
+    display: block;
+    font: 18px/1.5 "Microsoft Yahei";
+    padding-top: 10px
+}
+.shop-guid-list {
+    width: 1240px;
+    height: 207px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.weixingongzhonghao{
+    position: absolute;
+    width: 150px;
+    height: 164px;
+    right: 340px;
+    top: 50px;
+    display: none;
+    z-index: 100;
+}
+
+.shop-guid-list dl {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 855px;
+    left: 0;
+    line-height: normal;
+}
+.shop-guid-list dl dd {
+    width: 105px;
+    padding-left: 50px;
+    display: inline;
+    float: left;
+    position: relative;
+    margin: 0;
+    text-indent: 0;
+}
+.H-bottom-icon a b {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    display: block;
+    background: url(../images/h-bottom-icon.png) no-repeat 0 0;
+}
+.shop-guid-list b {
+    font-size: 16px;
+    color: #000;
+    line-height: 36px;
+    margin: 0;
+}
+.H-bottom-icon a.weixin b {
+    background-position: -48px 0;
+}
+.H-bottom-icon a.weixin:hover b {
+    background-position: -48px -24px;
+}
+.H-bottom-icon a.weixin:hover {
+    background: #20a900;
+}
+.H-bottom-icon a.sina:hover b {
+    background-position: 0 -24px;
+}
+.H-bottom-icon a.sina:hover {
+    background: #ea4d18;
+}
+.shop-guid-list a {
+    line-height: 26px;
+    font-size: 14px;
+    color: #666;
+}
+
+.H-bottom-icon a {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin: 5px 5px 0 0;
+    overflow: hidden;
+    background: #666;
+    border-radius: 3px;
+    transition: background .2s ease-in-out;
+    vertical-align: middle;
+}
+.server {
+    display: inline-block;
+    float: right;
+    position: relative;
+    width: 280px;
+    border-left: 1px solid #dfdfdf;
+    padding-left: 70px;
+}
+.server li {
+    width: 100%;
+    position: relative;
+    height: 29px;
+    color: #575757;
+    font-size: 14px;
+    line-height: 29px;
+}
+.server .telephone .ico-tel-server {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: -40px;
+    top: 3px;
+}
+.server .online {
+    border-radius: 6px;
+    width: 243px;
+    height: 46px;
+    line-height: 46px;
+    background: url(../images/ico-05_850174a.gif) no-repeat 0 center;
+    position: absolute;
+    bottom: -37px;
+    left: 90px;
+}
+.server .online a {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 105px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+}
+
+.footer {
+    padding-bottom: 40px;
+    width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    color: #575757;
+    padding-top: 30px;
+    border-top: 1px solid #dfdfdf;
+}
+.footer>div {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.footer a {
+    font-size: 14px;
+    color: #575757;
+}
+.footer a:hover {
+    color: #000;
+}
+.footer .line {
+    padding: 0 4px;
+}
+.china{
+    display: inline-block;
+    margin-left: 18px;
+}
+.footer .select-language {
+    width: 170px;
+    height: 40px;
+    margin-left: 40px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.footer .select-language ul {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 168px;
+    margin: 0;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    border-bottom: 0;
+    z-index: 5;
+    display: none;
+}
+.select-language ul li {
+    height: 38px;
+    line-height: 38px;
+    width: 100%;
+    display: block;
+}
+.footer .select-language>span {
+    width: 154px;
+    height: 38px;
+    line-height: 38px;
+    display: block;
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    padding-left: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.footer .select-language>span i {
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    width: 32px;
+    height: 20px;
+}
+.footer .select-language>.icons-arrowdown {
+    width: 9px;
+    height: 6px;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    z-index: 15;
+    background: url(../images/base_z_7b2c929.png) no-repeat -36px 0;
+}
+.footer .select-language:hover .icons-arrowdown{
+   transition: all 0.5s ease;
+    transform: rotate(180deg);
+
+}
+.select-language ul li i {
+    position: relative;
+    width: 32px;
+    height: 20px;
+}
+.icons-zh-cn {
+    background:url(../images/base_z_7b2c929.png) no-repeat -13px -172px;
+}
+.icons-en{
+    position: absolute;
+    top:0;
+    left:-30px;
+    background:url(../images/base_z_7b2c929.png) no-repeat -13px -195px}
+.icons-hk{
+    position: absolute;
+    top:0;
+    left:-24px;
+    background:url(../images/base_z_7b2c929.png) no-repeat -13px -218px;}
+.icons-russia{
+    position: absolute;
+    top:0;
+    left:-27px;
+    background:url(../images/base_z_7b2c929.png) no-repeat -13px -241px;}
+.icons-india{
+    position: absolute;
+    top:0;
+    left:-35px;
+    background:url(../images/base_z_7b2c929.png) no-repeat -13px -264px;}
+.icons-zh-cn{
+    position: absolute;
+    top:0;
+    left:-23px;
+    background:url(../images/base_z_7b2c929.png) no-repeat -13px -172px}
+
+/*底部结束*/

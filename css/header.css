@@ -1,0 +1,442 @@
+
+/*头部开始*/
+ #header{
+     width: 100%;
+     height: 139px;
+     min-width: 1240px;
+     position: relative;
+     background: #890500;
+ }
+ .hd-bg{
+     position: relative;
+     width: 100%;
+     background:url(../images/index_topbg_68571aa.png) no-repeat top center;
+ }
+ .header{
+     width: 1240px;
+     margin: 0 auto;
+     height: 81px;
+     position: relative;
+     z-index: 400;
+     padding: 10px 0;
+ }
+.header .hd-rt {
+    display: inline;
+    float: right;
+    position: relative;
+    z-index: 401;
+    width: 965px;
+    padding-top: 25px;
+}
+.header .hd-rt .header-car {
+    float: right;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+.header .hd-rt .header-car>li {
+    width: 115px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0;
+    margin: 0;
+    background: #fcc800;
+    border-radius: 5px;
+}
+.header .hd-rt .header-car>li>a {
+    color: #333;
+    display: block;
+    text-align: center;
+}
+.icons-car{
+    background: url(../images/base_z_7b2c929.png) -25px -25px;
+}
+.icons-car {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.icons {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.header .hd-rt .hd-lt-rt {
+    width: 208px;
+    height: 26px;
+    margin: 0 10px;
+    display: inline;
+    float: right;
+    border: 1px solid #f4f4f4;
+    line-height: 26px;
+    border-radius: 5px;
+}
+.header .hd-rt .hd-lt-rt .input-group {
+    width: 100%;
+    height: 26px;
+    position: relative;
+}
+.header .hd-rt .hd-lt-rt .search-txt-input {
+    display: inline;
+    float: left;
+    position: relative;
+    width: 172px;
+    height: 26px;
+}
+.header .hd-rt .hd-lt-rt .search-txt-input input {
+    height: 26px;
+    width: 160px;
+    padding: 0 10px;
+    line-height: 26px;
+    border: 0;
+    font-size: 12px;
+    color: #fff;
+    background: 0 0;
+}
+.header .hd-lt-rt .button-index-search {
+    background:url(../images/base_z_7b2c929.png) -24px -115px;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    z-index: 5;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.header .hd-rt .hd-lt-rt ul {
+    position: absolute;
+    right: 26px;
+    top: 0;
+    width: auto;
+    height: 26px;
+}
+.header .hd-rt .hd-lt-rt ul li {
+    float: left;
+    position: relative;
+}
+.header .hd-rt .hd-lt-rt ul li a {
+    color: #f4f4f4;
+    font-size: 12px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 8px;
+    line-height: 20px;
+}
+
+.navbar {
+    display: inline;
+    float: right;
+    position: relative;
+    z-index: 1;
+    font-size: 16px;
+    height: 22px;
+    line-height: 22px;
+    margin: 3px 5px 0 0;
+    padding-right: 5px;
+}
+.navbar li {
+    display: inline;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.navbar li a {
+    display: inline-block;
+    padding: 0 14px;
+    color: #fff;
+    line-height: 22px;
+}
+.navbar li a:hover, .navbar li a.current {
+    color: #fcc800;
+}
+.icons-hot {
+    background: url(../images/base_z_7b2c929.png)no-repeat 0px -93px;
+    position: absolute;
+    top: -18px;
+    right: -5px;
+    width: 45px;
+    height: 19px;
+
+}
+
+.header .hd-lt {
+    position: relative;
+    float: left;
+    height: 64px;
+    z-index: 300;
+}
+.header .hd-lt h1 {
+    width: 275px;
+    height: 64px;
+    float: left;
+    padding-top: 8px;
+    position: relative;
+    text-align: center;
+}
+
+.header .hd-lt h1 a, .header .hd-lt h1 .logo, .header .hd-lt h1 .logo img {
+    height: 39px;
+    width: 243px;
+    float: left;
+    padding: 8px 0;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+.header .hd-rt .header-car>li .shopcar-box {
+    display: none;
+}
+.header .hd-rt .header-car .shopcar-box {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    right: 0;
+    top: 28px;
+    width: 390px;
+    z-index: -1;
+    border-radius: 6px 0 6px 6px;
+    box-shadow: 0 3px 16px rgba(0,0,0,.4);
+    transition: height .3s ease;
+
+}
+.header .hd-rt .header-car .shop-car-empty {
+    padding: 15px 0;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.nav {
+    width: 100%;
+    height: 38px;
+    background: #e6e7e9;
+    position: relative;
+    z-index: 315;
+}
+.shop_kind{
+    float: left;
+    width: 275px;
+    height:38px;
+    line-height: 38px;
+    color: #7a7a7a;
+    font-size: 16px;
+    margin-left:5px ;
+}
+.shop_kind .kind{
+    display: inline;
+    margin-left: 15px;
+    /*position: relative;*/
+    /*z-index: 20;*/
+}
+.shop_kind:hover .icons-arrowdown{
+    transform: rotate(180deg);
+}
+.shop_kind .icons {
+    right: -20px;
+
+}
+.icons-arrowdown {
+    background: url(../images/base_z_7b2c929.png) no-repeat -36px 0px;
+    width: 9px;
+    height: 6px;
+    transition: all 0.3s ease;
+
+}
+.web_nav{
+    float: right;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.web_nav ul li{
+    position: relative;
+    float: left;
+    font-size: 12px;
+    padding-right: 15px;
+    border-left: 1px solid #ccc;
+}
+.web_nav ul li.sitenav{
+    border-left: 0;
+}
+.nav .web_nav ul li.sitenav:hover .icons-arrowdown{
+    transform: rotate(180deg);
+}
+
+.nav .web_nav ul li a {
+    padding-left: 15px;
+    color: #7a7a7a;
+}
+.nav .web_nav ul li a:hover {
+    color: #111;
+
+}
+.nav .web_nav ul {
+    display: block;
+    position: relative;
+    padding-top: 10px;
+}
+.nav .web_nav ul .sitenav {
+    width: auto;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size: 12px;
+}
+.nav .web_nav ul li a .icons {
+    margin-left: 4px;
+}
+.icons-yun {
+    width: 19px;
+    height: 15px;
+    background:url(../images/base_z_7b2c929.png) no-repeat -26px -9px;
+}
+
+
+
+  .sitenav .nav_trade {
+    width: 1241px;
+    z-index: 315;
+    position: absolute;
+    top: 28px;
+    left: -287px;
+    /*display: none;*/
+}
+
+
+.nav_trade .topnav {
+    width: 100%;
+    height: 384px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding-top: 28px;
+    position: relative;
+}
+/*.sitenav .topnav dl {*/
+    /*float: left;*/
+    /*text-align: center;*/
+    /*width: 162px;*/
+    /*margin: 0 20px;*/
+    /*left: 0;*/
+/*}*/
+/*.sitenav .topnav dl>dt,.sitenav .topnav dl>dd {*/
+    /*font-size: 15px;*/
+    /*color: #7b7883;*/
+    /*width: 162px;*/
+    /*height: 47px;*/
+    /*line-height: 47px;*/
+    /*margin: 0 16px 32px;*/
+    /*text-indent: 0;*/
+    /*transition:all ease .2s;*/
+    /*background: #f1f1f1;*/
+
+/*}*/
+/*.sitenav .topnav dl>dd a {*/
+    /*padding-left: 0;*/
+    /*height: 47px;*/
+/*}*/
+/*.web_nav ul li a {*/
+    /*padding-left: 15px;*/
+    /*color: #7a7a7a;*/
+/*}*/
+ /*.topnav dd a {*/
+    /*color: #7b7883;*/
+    /*display: block;*/
+    /*width: 162px;*/
+    /*padding: 0;*/
+    /*position: relative;*/
+/*}*/
+
+.children-item {
+    position: absolute;
+    top: 38px;
+    padding: 5px;
+    left: -45px;
+    z-index: 803;
+    background: #fff;
+}
+/*.item-arrow-up {*/
+    /*position: absolute;*/
+    /*top: -22px;*/
+    /*left: 25%;*/
+    /*height: 0;*/
+    /*width: 0;*/
+    /*line-height: 0;*/
+    /*border-color: transparent transparent #fff;*/
+    /*border-style: solid;*/
+    /*border-width: 12px;*/
+/*}*/
+.apkdown {
+    padding: 20px;
+    width: 660px;
+    height: 240px;
+    position: relative;
+    background: #fff;
+    font-size: 16px;
+    color: #8f8f8f;
+}
+.apkdown .apkdown-l {
+    width: 420px;
+    position: relative;
+    float: left;
+}
+.apkdown .apkdown-l .apk-logo {
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    float: left;
+    padding-bottom: 20px;
+}
+.apkdown .apkdown-l .apk-logo a {
+    display: inline-block;
+}
+.navguid .top-mininav ul li a {
+    padding-left: 15px;
+    color: #7a7a7a;
+}
+
+.apkdown .apkdown-l ul {
+    width: 220px;
+    height: 120px;
+    position: relative;
+    float: left;
+    padding: 0 0 20px;
+}
+.navguid .top-mininav ul li:first-child {
+    border: 0;
+}
+.apkdown .apkdown-l ul li {
+    width: 100%;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.apkdown .apkdown-l ul span {
+    width: 98px;
+    text-align: left;
+}
+.apkdown .apkdown-l ul b {
+    color: #000;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+.apkdown .apkdown-l p {
+    width: 100%;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.apkdown .apkdown-r p {
+    margin-top: 30px;
+    text-align: center;
+}
+/*头部结束*/
